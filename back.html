@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function(){
+	window.opener.Bsdk.user.checkOauthToken( window.location.href, function(){ window.opener.getKey(); } );
+	setTimeout( function(){ window.close(); }, 500 );
+}
+</script>
+</head>
+<body>
+</body>
+</html>
